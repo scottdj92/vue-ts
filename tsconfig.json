@@ -6,5 +6,8 @@
         "moduleResolution": "node",
         "sourceMap": true,
         "allowJs": true
-    }
+    },
+    "include": [
+        "./src/*"
+    ]
 }

@@ -1,12 +1,15 @@
 <template>
-    <div class="container">Hello {{bundler}}</div>
+    <div class="container">
+        <main-header></main-header>
+        Hello {{bundler}}
+    </div>
 </template>
-
 
 <script lang="ts">
 import Vue from 'vue'
+import Header from "./src/main-header.vue";
 export default Vue.extend({
-    data() {
+    data: () => {
         return {
             bundler: "parcel"
         }
@@ -15,8 +18,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+    @import "./test.scss";
     .container {
         color: cornflowerblue;
     }
 </style>
-
