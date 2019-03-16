@@ -6,8 +6,10 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-    data: {
-        bundler: "Parcel"
+    data() {
+        return {
+            bundler: "parcel"
+        }
     }
 })
 </script>
